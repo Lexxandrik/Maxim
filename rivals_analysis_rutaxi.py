@@ -11,9 +11,9 @@ driver = webdriver.Firefox()
 
 driver.get(url)
 
-addr_from = driver.find_element_by_xpath("//div[@id='routers']/input[contains(@class,'nostyle str_obj xdsoft_input')][0]")
+addr_from = driver.find_element_by_css_selector('input[placeholder='Откуда']')
 addr_to = driver.find_element_by_xpath("//div[@id='routers']/input[contains(@class,'nostyle str_obj xdsoft_input')][1]")
-addr_from_house = driver.find_element_by_xpath("//div[@id='routers']/input[contains(@class,'nostyle text-center str_h house')][0]")
+addr_from_house = driver.find_element_by_css_selector('#routers div:nth-child(1) input[placeholder='№ дома']')
 addr_to_house = driver.find_element_by_xpath("//div[@id='routers']/input[contains(@class,'nostyle text-center str_h house')][1]")
 sleep(5)
 
