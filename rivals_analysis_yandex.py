@@ -42,8 +42,6 @@ def add_address_from():
         addr_from.send_keys(Keys.ENTER)
         del streets[0]
         sleep(1)
-    else:
-        write()
 
 def add_address_to():
 
@@ -80,4 +78,5 @@ for i in range (len(streets)):
     add_address_from()
     add_address_to()
 
+write()
 print (cost_lst)
